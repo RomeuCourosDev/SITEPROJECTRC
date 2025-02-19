@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background: #2a148a;
+    background: rgba(42, 20, 138, 0.7);  /* Cor roxa com 70% de opacidade */
     color: white;
     position: fixed;
     width: 100%;
@@ -33,6 +33,7 @@ header {
     z-index: 100;
     transition: background 0.3s;
 }
+
 
 /* Dark Mode Button */
 #dark-mode-toggle {
@@ -89,13 +90,14 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('../img/banner.jpg') no-repeat center center;
+    background: rgba(0, 0, 0, 0.3) url('../img/banner.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: white;
     position: relative;
     overflow: hidden;
 }
+
 
 .hero h1 {
     font-size: 2.5rem;
