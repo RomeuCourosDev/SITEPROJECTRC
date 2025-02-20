@@ -34,7 +34,6 @@ header {
     transition: background 0.3s;
 }
 
-
 /* Dark Mode Button */
 #dark-mode-toggle {
     background: none;
@@ -52,7 +51,7 @@ header {
 }
 
 .logo img {
-    height: 70px;
+    height: 40px;
     width: auto;
 }
 
@@ -97,7 +96,6 @@ nav ul li a {
     position: relative;
     overflow: hidden;
 }
-
 
 .hero h1 {
     font-size: 2.5rem;
@@ -229,5 +227,60 @@ footer {
     .hero {
         height: 80vh;
         background-size: contain;
+    }
+}
+
+/* Container do catálogo */
+.catalogo-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Grid do catálogo */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo dos produtos */
+.produto {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
