@@ -230,7 +230,7 @@ footer {
     }
 }
 
-/* Container do catálogo */
+/* Container do catálogo catalogc.html*/
 .catalogo-container {
     max-width: 1200px;
     margin: 50px auto;
@@ -247,7 +247,7 @@ footer {
     align-items: center;
 }
 
-/* Estilo dos produtos */
+/* Estilo dos produtos*/
 .produto {
     background: white;
     border-radius: 10px;
@@ -290,6 +290,7 @@ footer {
 .produto-container {
     text-align: center;
     margin: 20px auto;
+    padding-top: 80px; /* Ajuste a distância conforme necessário */
 }
 
 .produto-detalhes {
@@ -321,5 +322,16 @@ footer {
 }
 
 .miniaturas img:hover {
-    border: 2px solid red;
+    border: 2px solid rgb(6, 6, 161);
+}
+
+.miniatura-item {
+    text-align: center; /* Centraliza o texto abaixo da miniatura */
+    margin-bottom: 15px; /* Distância entre as miniaturas */
+}
+
+.miniatura-item p {
+    font-size: 14px;
+    margin-top: 5px; /* Distância entre a imagem e o nome */
+    color: #333; /* Cor do nome da cor */
 }
