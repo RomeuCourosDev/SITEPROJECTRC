@@ -32,6 +32,7 @@ header {
     left: 0;
     z-index: 100;
     transition: background 0.3s;
+    height: 80px;  /* Define uma altura fixa para o cabeçalho */
 }
 
 /* Dark Mode Button */
@@ -51,7 +52,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
 }
 
@@ -295,7 +296,7 @@ footer {
 
 .produto-detalhes {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     gap: 20px;
 }
@@ -334,4 +335,54 @@ footer {
     font-size: 14px;
     margin-top: 5px; /* Distância entre a imagem e o nome */
     color: #333; /* Cor do nome da cor */
+}
+
+/* Estilos para a seção de informações */
+#informacoes {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.informacoes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.info-item {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-item p, .info-item ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.info-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .informacoes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+    }
 }
