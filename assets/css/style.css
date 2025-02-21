@@ -287,31 +287,6 @@ footer {
 
 /* produto1 */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: #8B0000;
-    color: white;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 .produto-container {
     text-align: center;
     margin: 20px auto;
